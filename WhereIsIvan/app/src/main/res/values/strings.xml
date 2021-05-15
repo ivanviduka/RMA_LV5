@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WhereIsIvan</string>
+    <string name="title_activity_maps">Gdje sam?</string>
+    <string name="btn_text">Snimi fotografiju</string>
+    <string name="tv_geografska_sirina">Geografska širina</string>
+    <string name="tv_trenutna_sirina">Trenutna geo širina</string>
+    <string name="tv_geografska_duzina">Geografska dužina</string>
+    <string name="tv_trenutna_duzina">Trenutna geo dužina</string>
+    <string name="tv_drzava">Država</string>
+    <string name="tv_mjesto">Mjesto</string>
+    <string name="tv_trenutna_adresa">Adresa</string>
+</resources>

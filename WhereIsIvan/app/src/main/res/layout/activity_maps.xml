@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MapsActivity">
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginMedium"
+        android:text="@string/btn_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_geografska_sirina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_geografska_sirina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_take_photo" />
+
+    <TextView
+        android:id="@+id/tv_trenutna_sirina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_trenutna_sirina"
+        app:layout_constraintStart_toStartOf="@id/tv_trenutna_drzava"
+        app:layout_constraintTop_toBottomOf="@id/btn_take_photo" />
+
+    <TextView
+        android:id="@+id/tv_geografska_duzina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_geografska_duzina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_geografska_sirina" />
+
+    <TextView
+        android:id="@+id/tv_trenutna_duzina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_trenutna_duzina"
+        app:layout_constraintStart_toStartOf="@id/tv_trenutna_drzava"
+        app:layout_constraintTop_toBottomOf="@id/tv_trenutna_sirina"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_drzava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_drzava"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_geografska_duzina" />
+
+    <TextView
+        android:id="@+id/tv_trenutna_drzava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_drzava"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_drzava"
+        app:layout_constraintTop_toBottomOf="@id/tv_trenutna_duzina" />
+
+    <TextView
+        android:id="@+id/tv_mjesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_mjesto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_drzava" />
+
+    <TextView
+        android:id="@+id/tv_trenutno_mjesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_mjesto"
+        app:layout_constraintStart_toStartOf="@id/tv_trenutna_drzava"
+        app:layout_constraintTop_toBottomOf="@id/tv_trenutna_drzava"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_adresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_trenutna_adresa"
+        app:layout_constraintBottom_toTopOf="@id/map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mjesto" />
+
+    <TextView
+        android:id="@+id/tv_trenutna_adresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_trenutna_adresa"
+        app:layout_constraintBottom_toTopOf="@id/map"
+        app:layout_constraintStart_toStartOf="@id/tv_trenutna_drzava"
+        app:layout_constraintTop_toBottomOf="@id/tv_trenutno_mjesto" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        tools:context=".MapsActivity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
